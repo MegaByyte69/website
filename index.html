@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gurukul Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Gurukul Academy</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="search.html">SEARCH</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="content">
+            <br><br>
+            <p class="par">Unlock your potential with personalized tutoring that fits your unique learning style.<br>
+                 Whether you're looking for help in math, science, languages, or any other subject,<br>
+                  our dedicated tutors are here to support you every step of the way.<br><br>  
+                  <b>Find Your Tutor Now!</b>
+             </p>
+             <button class="cn"><a href="joinus.html">JOIN US</a></button>
+                
+            <div class="form">
+                <form method="post" action="login.php">
+                        <h2>Login Here</h2>
+                        <input type="email" class="input" name="email" id="email" placeholder="Enter Email">
+                        <input type="password" class="input" name="password" id="password" placeholder="Enter Password">
+                        <input type="submit" class="btnn" id="login" value="Log In" name="login">
+                        <p class="link">Don't have an account<br>
+                        <a href="joinus.html"><u>Sign up</u> </a> here</a></p>
+                        <p class="liw">Log in with</p>
+                        <div class="icons">
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        </div>
+                </form>
+             </div>
+        </div>
+    </div>
+
+    
+    <!-- src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js" -->
+    <script>
+        const login = document.getElementById('login');
+        login.addEventListener('click',() => {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Simple validation
+            if (email == '' || password == '') {
+                alert("Both fields are required");
+            }
+        })
+       
+    </script>
+</body>
+</html>

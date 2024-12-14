@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Teacher and Student</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <!-- Main Container with Background Image -->
+    <div class="main">
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Gurukul Academy</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="search.html">SEARCH</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Search Form -->
+        <div class="cont">
+            <h2>Search Teachers by subject or name</h2>
+
+            <p>Please enter your relevant subject for getting your right tutors.</p>
+            <form action="search_results.html" method="GET">
+            
+                <label for="searchType">Search for:</label>
+                <select id="searchType" name="type" >
+                    <option value="subject">Mathematics</option>
+                    <option value="subject">Science</option>
+                    <option value="subject">Optional maths</option>
+                    <option value="subject">Computer</option>
+                </select>
+                
+
+                <!-- Input for the search term -->
+                <label for="searchQuery">Location:</label>
+                <input type="text" id="searchQuery" name="query" placeholder="Enter your location here" >
+
+                <!-- Submit button -->
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
